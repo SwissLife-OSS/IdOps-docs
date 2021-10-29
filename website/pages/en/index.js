@@ -108,16 +108,14 @@ class Index extends React.Component {
     );
 
     const GetStarted = () => (
-      <Block layout="fourColumn" align="left">
+      <Block layout="fourColumn" align="center">
         {[
           {
-            title: "1. Setup",
-            content: `Create, build and deploy a custom host for IdOps:`,
-            image: `${baseUrl}img/idops_client_overview.png`,
-            imageAlign: 'bottom'
+            title: "Setup",
+            content: `Create a .NET Host for the IdOps by integrating the needed nuget packages. Build and deploy the host on your environment by providing the configuration for needed services as MongoDB and Azure ServiceBus.`,
           },
           {
-            title: "2. Integrate",
+            title: "Integrate",
             content: `Install the IdOps nuget packages within your Identity Server:
 \`\`\`sh
 dotnet add package IdOps.IdentityServer
@@ -127,12 +125,72 @@ dotnet add package IdOps.IdentityServer.Messaging.AzureServiceBus
 `
           },
           {
-            title: "3. Use",
-            content: `Create, edit, approve and publish Identity Server resources:`,
-            image: `${baseUrl}img/idops_publish_overview.png`,
-            imageAlign: 'bottom'
+            title: "Use",
+            content: `Configure tenants, define environments and Identity Servers, create resources, approve and publish them to the targeted Identity Server.`,
           },
           {}
+        ]}
+      </Block>
+    );
+
+    const Features1 = () => (
+      <Block layout="fourColumn" background="light" align="center" className="featureImage">
+        {[
+          {
+            title: "Tenants",
+            image: `${baseUrl}img/idops_tenants.png`,
+            imageAlign: 'bottom',
+            imageLink: `${baseUrl}img/idops_tenants.png`
+          },
+          {
+            title: "Environments",
+            image: `${baseUrl}img/idops_environments.png`,
+            imageAlign: 'bottom',
+            imageLink: `${baseUrl}img/idops_environments.png`
+          },
+          {
+            title: "Identity Servers",
+            image: `${baseUrl}img/idops_identityserver.png`,
+            imageAlign: 'bottom',
+            imageLink: `${baseUrl}img/idops_identityserver.png`
+          },
+          {
+            title: "Resources",
+            image: `${baseUrl}img/idops_client.png`,
+            imageAlign: 'bottom',
+            imageLink: `${baseUrl}img/idops_client.png`
+          }
+        ]}
+      </Block>
+    );
+
+    const Features2 = () => (
+      <Block layout="fourColumn" align="center">
+        {[
+          {
+            title: "Approve",
+            image: `${baseUrl}img/idops_approve.png`,
+            imageAlign: 'bottom',
+            imageLink: `${baseUrl}img/idops_approve.png`
+          },
+          {
+            title: "Publish",
+            image: `${baseUrl}img/idops_publish.png`,
+            imageAlign: 'bottom',
+            imageLink: `${baseUrl}img/idops_publish.png`
+          },
+          {
+            title: "Audit",
+            image: `${baseUrl}img/idops_audit.png`,
+            imageAlign: 'bottom',
+            imageLink: `${baseUrl}img/idops_audit.png`
+          },
+          {
+            title: "Events",
+            image: `${baseUrl}img/idops_events.png`,
+            imageAlign: 'bottom',
+            imageLink: `${baseUrl}img/idops_events.png`
+          }
         ]}
       </Block>
     );
@@ -143,6 +201,8 @@ dotnet add package IdOps.IdentityServer.Messaging.AzureServiceBus
         <div className="mainContainer">
           <FeatureCallout />
           <GetStarted />
+          <Features1 />
+          <Features2 />
         </div>
       </div>
     );
