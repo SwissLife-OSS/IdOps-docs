@@ -14,19 +14,19 @@ const users = [
   }
 ];
 
-const repoUrl = "https://github.com/SwissLife-OSS/PLACEHOLDER";
+const repoUrl = "https://github.com/SwissLife-OSS/IdOps";
 const organizationUrl = "https://swissLife-oss.github.io";
 const blogUrl = organizationUrl + "/blog";
 
 const siteConfig = {
-  title: "PLACEHOLDER", // Title for your website. Hide with CSS due to logo type
-  tagline: "PLACEHOLDER tagline",
+  title: "IdOps", // Title for your website. Hide with CSS due to logo type
+  tagline: "A multi-tenant Identity Server resource management platform",
   url: "https://swisslife-oss.github.io", // Your website URL
-  baseUrl: "/PLACEHOLDER/", // Base URL for your project */
+  baseUrl: "/IdOps/", // Base URL for your project */
 
   // Used for publishing and more
-  projectName: "PLACEHOLDER",
-  realProjectName: "PLACEHOLDER",
+  projectName: "IdOps",
+  realProjectName: "IdOps",
   organizationName: "swisslife-oss",
   organizationTitle: "SwissLife-OSS",
   organizationUrl,
@@ -104,7 +104,7 @@ const siteConfig = {
   enableUpdateTime: true,
 
   // direct editing of docs
-  editUrl: "https://github.com/SwissLife-OSS/PLACEHOLDER/edit/master/docs/",
+  editUrl: "https://github.com/SwissLife-OSS/IdOps/edit/master/docs/",
 
   repoUrl
 };

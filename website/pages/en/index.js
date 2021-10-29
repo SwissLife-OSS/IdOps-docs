@@ -97,12 +97,12 @@ class Index extends React.Component {
         className="productShowcaseSection paddingBottom"
         style={{ textAlign: "center" }}
       >
-        <h1>A framework to simplify your tests</h1>
+        <h1>IdOps is a multi-tenant Identity Server resource management platform.</h1>
         <MarkdownBlock>
-          Squadron is a helpful framework which enables you to write tests
-          against dependent services without any overhead. Squadron can provide
-          you isolation in tests through Container Providers or support for all
-          other services through Cloud Providers.
+          IdOps is a platform which enables you to create, edit
+          and publish identity server resources. IdOps can provide you
+          a central resource management tool for all your identity server
+          tenants and environments enhanced by an approval and auditing process.
         </MarkdownBlock>
       </div>
     );
@@ -111,52 +111,26 @@ class Index extends React.Component {
       <Block layout="fourColumn" align="left">
         {[
           {
-            title: "1. Install",
-            content: `Install the Squadron nuget package for MongoDB (or other supported service) within your test project:
-
-\`\`\`sh
-dotnet add package Squadron.Mongo
-\`\`\`
-`
+            title: "1. Setup",
+            content: `Create, build and deploy a custom host for IdOps:`,
+            image: `${baseUrl}img/idops_client_overview.png`,
+            imageAlign: 'bottom'
           },
           {
-            title: "2. Access",
-            content: `Inject the MongoResources into your test class constructor:
-\`\`\`csharp
-public class AccountRepositoryTests
-    : IClassFixture<MongoResource>
-{
-    private readonly MongoResources _mongoResource;
-
-    public AccountRepositoryTests(
-        MongoResources mongoResource)
-    {
-        _mongoResource = mongoResource;
-    }
-}
+            title: "2. Integrate",
+            content: `Install the IdOps nuget packages within your Identity Server:
+\`\`\`sh
+dotnet add package IdOps.IdentityServer
+dotnet add package IdOps.IdentityServer.Store.Mongo
+dotnet add package IdOps.IdentityServer.Messaging.AzureServiceBus
 \`\`\`
 `
           },
           {
             title: "3. Use",
-            content: `In your test use MongoResources to create a database and initialize your repository:
-\`\`\`csharp
-[Fact]
-public void CreateAccount_AccountExists()
-{
-    // arrange
-    var database = _mongoResource.CreateDatabase();
-    var accountRepository = new AccountRepository(database);
-    var account = new Account();
-
-    // act
-    var addedAccount = accountRepository.Add(account);
-
-    // assert
-    Snapshot.Match(addedAccount);
-}
-\`\`\`
-`
+            content: `Create, edit, approve and publish Identity Server resources:`,
+            image: `${baseUrl}img/idops_publish_overview.png`,
+            imageAlign: 'bottom'
           },
           {}
         ]}
