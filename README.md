@@ -18,4 +18,4 @@ yarn
 yarn start
 ```
 
-You can now acces the documentation in your browser under [localhost:3000/IdOps](http://localhost:3000/IdOps)
+You can now access the documentation in your browser under [localhost:3000/IdOps](http://localhost:3000/IdOps)
