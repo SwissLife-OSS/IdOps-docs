@@ -14,7 +14,7 @@ const users = [
   }
 ];
 
-const repoUrl = "https://github.com/SwissLife-OSS/IdOps";
+const repoUrl = "https://github.com/SwissLife-OSS/idops";
 const organizationUrl = "https://swissLife-oss.github.io";
 const blogUrl = organizationUrl + "/blog";
 
@@ -22,7 +22,7 @@ const siteConfig = {
   title: "IdOps", // Title for your website. Hide with CSS due to logo type
   tagline: "A multi-tenant Identity Server resource management platform",
   url: "https://swisslife-oss.github.io", // Your website URL
-  baseUrl: "/IdOps/", // Base URL for your project */
+  baseUrl: "/idops/", // Base URL for your project */
 
   // Used for publishing and more
   projectName: "IdOps",
