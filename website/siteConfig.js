@@ -8,7 +8,7 @@
 const users = [
   {
     caption: "Swiss Life",
-    image: "/img/logo_sl_squadron.png",
+    image: "/img/logo_sl_oss.svg",
     infoLink: "https://SwissLife-OSS.github.io",
     pinned: true
   }
@@ -53,8 +53,8 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: "img/logo_sl_squadron_horizontal.png",
-  footerIcon: "img/logo_sl_squadron_horizontal.png",
+  headerIcon: "img/logo_sl_oss.svg",
+  footerIcon: "img/logo_sl_oss.svg",
   favicon: "img/favicon.png",
 
   /* Colors for website */
