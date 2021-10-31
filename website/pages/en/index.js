@@ -133,76 +133,12 @@ dotnet add package IdOps.IdentityServer.AzureServiceBus
       </Block>
     );
 
-    const Features1 = () => (
-      <Block layout="fourColumn" background="light" align="center" className="featureImage">
-        {[
-          {
-            title: "Tenants",
-            image: `${baseUrl}img/idops_tenants.png`,
-            imageAlign: 'bottom',
-            imageLink: `${baseUrl}img/idops_tenants.png`
-          },
-          {
-            title: "Environments",
-            image: `${baseUrl}img/idops_environments.png`,
-            imageAlign: 'bottom',
-            imageLink: `${baseUrl}img/idops_environments.png`
-          },
-          {
-            title: "Identity Servers",
-            image: `${baseUrl}img/idops_identityserver.png`,
-            imageAlign: 'bottom',
-            imageLink: `${baseUrl}img/idops_identityserver.png`
-          },
-          {
-            title: "Resources",
-            image: `${baseUrl}img/idops_client.png`,
-            imageAlign: 'bottom',
-            imageLink: `${baseUrl}img/idops_client.png`
-          }
-        ]}
-      </Block>
-    );
-
-    const Features2 = () => (
-      <Block layout="fourColumn" align="center">
-        {[
-          {
-            title: "Approval",
-            image: `${baseUrl}img/idops_approval.png`,
-            imageAlign: 'bottom',
-            imageLink: `${baseUrl}img/idops_approval.png`
-          },
-          {
-            title: "Publish",
-            image: `${baseUrl}img/idops_publish.png`,
-            imageAlign: 'bottom',
-            imageLink: `${baseUrl}img/idops_publish.png`
-          },
-          {
-            title: "Audit",
-            image: `${baseUrl}img/idops_audit.png`,
-            imageAlign: 'bottom',
-            imageLink: `${baseUrl}img/idops_audit.png`
-          },
-          {
-            title: "Events",
-            image: `${baseUrl}img/idops_events.png`,
-            imageAlign: 'bottom',
-            imageLink: `${baseUrl}img/idops_events.png`
-          }
-        ]}
-      </Block>
-    );
-
     return (
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           <FeatureCallout />
           <GetStarted />
-          <Features1 />
-          <Features2 />
         </div>
       </div>
     );
