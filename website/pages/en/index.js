@@ -63,8 +63,8 @@ class HomeSplash extends React.Component {
           <Logo img_src={`${baseUrl}img/logo_splash_squadron.png`} />
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            <Button className="button button-primary" href={docUrl("quickstart")}>Get Started</Button>
-            <Button className="button button-secondary" href={docUrl("introduction")}>Learn More</Button>
+            <Button className="button button-primary" href={docUrl("overview")}>Get Started</Button>
+            <Button className="button button-secondary" href={docUrl("resources")}>Learn More</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -108,7 +108,7 @@ class Index extends React.Component {
     );
 
     const GetStarted = () => (
-      <Block layout="fourColumn" align="center">
+      <Block layout="threeColumn" align="center">
         {[
           {
             title: "Setup",
@@ -119,8 +119,8 @@ class Index extends React.Component {
             content: `Install the IdOps nuget packages within your Identity Server:
 \`\`\`sh
 dotnet add package IdOps.IdentityServer
-dotnet add package IdOps.IdentityServer.Store.Mongo
-dotnet add package IdOps.IdentityServer.Messaging.AzureServiceBus
+dotnet add package IdOps.IdentityServer.Mongo
+dotnet add package IdOps.IdentityServer.AzureServiceBus
 \`\`\`
 `
           },
@@ -168,10 +168,10 @@ dotnet add package IdOps.IdentityServer.Messaging.AzureServiceBus
       <Block layout="fourColumn" align="center">
         {[
           {
-            title: "Approve",
-            image: `${baseUrl}img/idops_approve.png`,
+            title: "Approval",
+            image: `${baseUrl}img/idops_approval.png`,
             imageAlign: 'bottom',
-            imageLink: `${baseUrl}img/idops_approve.png`
+            imageLink: `${baseUrl}img/idops_approval.png`
           },
           {
             title: "Publish",

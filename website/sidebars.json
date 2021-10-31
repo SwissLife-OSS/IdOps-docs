@@ -1,8 +1,15 @@
 {
   "docs": {
     "Introduction": [
-      "introduction",
-      "quickstart"
+      "overview"
+    ],
+    "Documentation": [
+      "resources",
+      "rules",
+      "tenants",
+      "publish",
+      "approval",
+      "events"
     ]
   }
 }
